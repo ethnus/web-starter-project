@@ -2,12 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Placeholder Title</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="unique-code" content="{{UNIQUE_CODE}}">
+  <title>Full-Stack Kickoff - Deploy & Delight</title>
+  <style>
+    :root{--bg:#fff;--fg:#000;--acc:#06f}
+    @media(prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--acc:#0cf}}
+    body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--fg);font-family:sans-serif;text-align:center}
+    .box{padding:2rem;border:2px solid var(--acc);border-radius:8px}
+    h1{margin:0 0 .5rem}
+    p{margin:1rem 0}
+    .code{font:.7rem monospace;color:var(--acc);margin-top:1rem}
+    .note{font-size:.8rem;color:#888;margin-top:1rem}
+  </style>
 </head>
 <body>
-  <!-- Your HTML here -->
-  <script src="js/scripts.js"></script>
+  <div class="box">
+    <h1>Deploy & Delight</h1>
+    <p>Hosting this file on the web is a neat entry to full-stack development.</p>
+    <p>Drop this file into any server root, hit port 80, and voilà: instant web action.</p>
+    <div class="code">{{UNIQUE_CODE}}</div>
+    <div class="note">This code is yours alone. Do not modify this file.</div>
+  </div>
 </body>
 </html>
